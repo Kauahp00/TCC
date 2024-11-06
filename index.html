@@ -23,7 +23,6 @@
 
     <div class="btn1">
     <img src="img/acess.png" alt="Botão de Acessibilidade" class="imgAcess"> 
-      <span class="tooltip">Em desenvolvimento</span>
   </div>
 
 </header>
@@ -52,7 +51,45 @@
     
    
 </body>
+<style>
+        .btn1 {
+            width: 33vw;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 150px; /* Reduz o padding para mover a imagem para a esquerda */
+            align-self: center;
+            position: relative; /* Necessário para posicionar a mensagem */
+        }
 
+        .imgAcess {
+            height: 6vh;
+            cursor: pointer;
+        }
+
+        .btn1:hover::after {
+            content: "Em desenvolvimento...";
+            position: absolute;
+            top: 100%; /* Posição abaixo da imagem */
+            right: 55px; /* Ajuste para posicionar a caixa um pouco mais à esquerda */
+            background-color: #ffffff; /* Cor de fundo da caixa de texto */
+            color: #000000; /* Cor do texto */
+            padding: 20px; /* Aumenta o padding para tornar a caixa maior */
+            height: 300px; /* Altura da caixa de texto */
+            width: auto; /* Largura automática da caixa */
+            border-radius: 5px;
+            font-size: 1em; /* Aumenta o tamanho do texto */
+            white-space: nowrap;
+            margin-top: 5px; /* Espaço entre a imagem e a caixa de texto */
+            
+            /* Centralização do texto */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(65, 180, 247, 0.3);
+        }
+</style>
 
    
 </html>
+
