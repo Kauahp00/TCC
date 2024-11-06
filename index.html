@@ -22,7 +22,8 @@
     </nav>
 
     <div class="btn1">
-    <img src="img/acess.png" alt="Botão de Acessibilidade" class="imgAcess">  
+    <img src="img/acess.png" alt="Botão de Acessibilidade" class="imgAcess"> 
+      <span class="tooltip">Em desenvolvimento</span>
   </div>
 
 </header>
@@ -51,4 +52,33 @@
     
    
 </body>
+
+
+    <style>.btn1 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 100%; /* Posição acima da imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  width: max-content;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn1:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}</style>
 </html>
