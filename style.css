@@ -84,7 +84,18 @@ li:hover {
     height: 6vh;
     cursor: pointer;
 }
-
+.btn1:hover::after {
+    content: "em desenvolvimento";
+    position: absolute;
+    bottom: 100%; /* Abaixo da imagem */
+    right: 75px; /* Ajuste essa posição conforme necessário */
+    background-color: #333; /* Cor de fundo da caixa de texto */
+    color: #fff; /* Cor do texto */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
 
 /*ESTILO DO MAIN*/
 
